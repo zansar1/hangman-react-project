@@ -1,0 +1,86 @@
+/* src/Auth.css */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 5rem;
+  padding: 2.5rem;
+  background-color: var(--bg-color-modal);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* This is the key fix for the font issue */
+.auth-form input,
+.auth-form button,
+.auth-toggle button {
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-form input {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: var(--bg-color); /* Match the page background */
+  color: var(--text-color);
+  border: 1px solid transparent;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border: 1px solid var(--button-active-bg);
+}
+
+.auth-form button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--button-active-bg);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.auth-form button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.auth-toggle {
+  text-align: center;
+  color: #888;
+}
+
+.auth-toggle button {
+  background: none;
+  border: none;
+  color: var(--button-active-bg);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.25rem;
+}
+.auth-error {
+  color: #ff3b30; /*  red for errors */
+  text-align: center;
+  min-height: 1.2rem;
+  font-size: 0.9rem;
+}

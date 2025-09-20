@@ -1,0 +1,38 @@
+/* src/Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* This adds the blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--bg-color-modal, hsl(200, 100%, 8%));
+  color: var(--text-color, white);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color, white);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  min-width: 350px;
+  max-width: 90vw;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  color: var(--text-color, white);
+  cursor: pointer;
+  line-height: 1;
+}

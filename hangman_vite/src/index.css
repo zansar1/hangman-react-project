@@ -1,0 +1,72 @@
+/* src/index.css */
+:root {
+  --bg-color: hsl(200, 100%, 8%);
+  --bg-color-modal: hsl(200, 100%, 12%);
+  --text-color: white;
+  --border-color: white;
+  --button-active-bg: hsl(210, 100%, 50%);
+  --button-hover-bg: hsl(210, 100%, 75%);
+  --ios-light-gray: #f2f2f7;
+}
+
+[data-theme="light"] {
+  --bg-color: var(--ios-light-gray);
+  --bg-color-modal: white;
+  --text-color: hsl(200, 100%, 8%);
+  --border-color: hsl(200, 100%, 8%);
+  --button-active-bg: hsl(210, 100%, 50%);
+  --button-hover-bg: hsl(210, 100%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.header-btn:hover {
+  background-color: var(--border-color);
+  color: var(--bg-color);
+}
+
+.primary-action-btn {
+  background-color: var(--button-active-bg);
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.primary-action-btn:hover {
+  background-color: var(--button-hover-bg);
+}
