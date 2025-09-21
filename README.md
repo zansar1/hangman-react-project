@@ -2,7 +2,7 @@
 
 A classic word-guessing game rebuilt from the ground up with a modern, full-stack technology set. This project was a deep dive into building a complete, feature-rich web application from authentication to deployment.
 
-**[Live Demo Link](https://YOUR_VERCEL_LINK_HERE)**
+**[Live Demo Link](https://hangman-react-project.vercel.app/)**
 
 ![Hang-Man Gameplay GIF](https://i.imgur.com/KLSKkjj.png)
 
