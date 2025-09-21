@@ -13,7 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "forceConsistentCasingInFileNames": true, /* <-- ADD THIS LINE */
+    "forceConsistentCasingInFileNames": true,
 
     /* Linting */
     "strict": true,
@@ -21,6 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "vite-env.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "vite-env.d.ts"]
+  /* The "references" line that was here should be deleted */
 }
