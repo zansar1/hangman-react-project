@@ -1,15 +1,22 @@
-Markdown
-
 # Hang-Man: A Modern Web Game
 
 A classic word-guessing game rebuilt from the ground up with a modern, full-stack technology set. This project was a deep dive into building a complete, feature-rich web application from authentication to deployment.
 
-**[Live Demo Link](https://vercel.com/zaids-projects-3654809a/hangman-react-project/8oFgSAa83sCKCEnRtF785BV9j73C)**
+**[Live Demo Link](https://YOUR_VERCEL_LINK_HERE)**
 
-![Hang-Man Game Screenshot](https://i.imgur.com/KLSKkjj.png) 
+![Hang-Man Gameplay GIF](https://i.imgur.com/vHqB3qQ.gif)
+
 ## About This Project
 
 I wanted to go beyond a simple front-end project and challenge myself to build something real. This Hang-Man game is the result. It's a complete web application where users can create an account, play the game with words fetched from a live API, and have their scores saved to a database. It was an incredible learning experience in connecting a front-end React application to a back-end service and handling all the challenges that come with it.
+
+## Showcase
+
+<p align="center">
+  <img src="https://i.imgur.com/bNnSlCd.png" alt="Login Screen" title="Login & Register UI" width="32%">
+  <img src="https://i.imgur.com/Iqd2gNb.png" alt="Main Game Screen" title="Main Game Interface" width="32%">
+  <img src="https://i.imgur.com/45ZxcHv.png" alt="Settings Modal" title="Animated Settings Modal" width="32%">
+</p>
 
 ## Features
 
