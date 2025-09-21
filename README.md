@@ -6,7 +6,8 @@ A classic word-guessing game rebuilt from the ground up with a modern, full-stac
 
 **[Live Demo Link](https://vercel.com/zaids-projects-3654809a/hangman-react-project/8oFgSAa83sCKCEnRtF785BV9j73C)**
 
-![Hang-Man Game Screenshot](https://i.imgur.com/KLSKkjj.png) ## About This Project
+![Hang-Man Game Screenshot](https://i.imgur.com/KLSKkjj.png) 
+## About This Project
 
 I wanted to go beyond a simple front-end project and challenge myself to build something real. This Hang-Man game is the result. It's a complete web application where users can create an account, play the game with words fetched from a live API, and have their scores saved to a database. It was an incredible learning experience in connecting a front-end React application to a back-end service and handling all the challenges that come with it.
 
