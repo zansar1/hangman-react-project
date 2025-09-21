@@ -12,17 +12,17 @@
 }
 
 .btn {
-  width: 50px; /* Fixed width for better alignment */
+  width: 50px;
   border: 3px solid var(--border-color);
   background: none;
   aspect-ratio: 1 / 1;
-  font-size: 1.5rem; /* Adjusted font size */
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding: 0.5rem;
   font-weight: bold;
   cursor: pointer;
   color: var(--text-color);
-  border-radius: 8px; /* Added border radius */
+  border-radius: 8px;
 }
 
 .btn.active {
@@ -37,4 +37,17 @@
 .btn:hover:not(:disabled),
 .btn:focus:not(:disabled) {
   background-color: var(--button-hover-bg);
+}
+
+/* NEW: Styles for mobile devices */
+@media (max-width: 768px) {
+  .btn {
+    width: 35px; /* Make buttons smaller */
+    font-size: 1rem; /* Make font smaller */
+    border-width: 2px;
+  }
+
+  .keyboardRow {
+    gap: 0.25rem; /* Reduce gap between buttons */
+  }
 }

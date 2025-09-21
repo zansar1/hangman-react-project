@@ -4,10 +4,9 @@ import { supabase } from './supabaseClient'
 import './Auth.css'
 import { motion, useAnimationControls } from "framer-motion"
 
-// Define animation variants for the form
 const formVariants = {
   shake: {
-    x: [0, -10, 10, -10, 10, 0], // Keyframe animation for a shake
+    x: [0, -10, 10, -10, 10, 0],
     transition: { duration: 0.4 }
   }
 }
@@ -18,15 +17,14 @@ export function AuthPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [username, setUsername] = useState('')
-  const [error, setError] = useState('') // New state for error messages
+  const [error, setError] = useState('')
   
-  // Animation controller for the form
   const controls = useAnimationControls()
 
   const handleAuth = async (event: React.FormEvent) => {
     event.preventDefault()
     setLoading(true)
-    setError('') // Clear previous errors
+    setError('')
 
     let authError = null
 
@@ -57,14 +55,14 @@ export function AuthPage() {
         await supabase
           .from('profiles')
           .update({ email: signUpData.user.email })
-          .eq('id', signUpData.user.id)
-        alert('Check your email for a confirmation link!')
+          .eq('id', signUpData.user.id);
+        // The alert that was here has been removed.
       }
     }
 
     if (authError) {
       setError(authError.message)
-      controls.start("shake") // Trigger the shake animation on error
+      controls.start("shake")
     }
     
     setLoading(false)
@@ -75,7 +73,6 @@ export function AuthPage() {
       <h1>{isLogin ? 'Welcome Back!' : 'Create an Account'}</h1>
       <p>{isLogin ? 'Sign in with your username.' : 'Sign up to start playing.'}</p>
       
-      {/* The form is now a motion component linked to our controls */}
       <motion.form 
         className="auth-form" 
         onSubmit={handleAuth}
@@ -92,17 +89,14 @@ export function AuthPage() {
         )}
         <input type="password" placeholder="Password" value={password} required={true} onChange={(e) => setPassword(e.target.value)} />
         
-        {/* New div to display error messages */}
         <div className="auth-error">{error}</div>
 
-        {/* The button is now a motion component with tap feedback */}
         <motion.button 
           disabled={loading}
-          whileTap={{ scale: 0.95 }} // "Squish" effect on click
+          whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
           {loading ? (
-            // Loading spinner animation
             <motion.div 
               style={{ width: 20, height: 20, borderRadius: '50%', border: '3px solid rgba(255,255,255,0.2)', borderTopColor: 'white', margin: '0 auto' }}
               animate={{ rotate: 360 }}

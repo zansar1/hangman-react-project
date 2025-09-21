@@ -17,7 +17,8 @@ export function HangmanWord({
       style={{
         display: "flex",
         gap: ".25em",
-        fontSize: "6rem",
+        // UPDATED: This font size is now responsive!
+        fontSize: "clamp(1.5rem, 10vw, 6rem)",
         fontWeight: "bold",
         textTransform: "uppercase",
         fontFamily: "Inter, sans-serif",
@@ -27,11 +28,10 @@ export function HangmanWord({
         <span
           style={{
             borderBottom: ".1em solid var(--border-color)",
-            // NEW: These styles create a fixed-size box for each letter
             display: "inline-flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "1em", // Each letter container has a fixed width
+            width: "1em",
           }}
           key={index}
         >
