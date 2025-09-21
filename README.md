@@ -4,7 +4,7 @@ A classic word-guessing game rebuilt from the ground up with a modern, full-stac
 
 **[Live Demo Link](https://YOUR_VERCEL_LINK_HERE)**
 
-![Hang-Man Gameplay GIF](https://i.imgur.com/vHqB3qQ.gif)
+![Hang-Man Gameplay GIF](https://i.imgur.com/KLSKkjj.png)
 
 ## About This Project
 
